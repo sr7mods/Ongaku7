@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Stars in background -->
+    <path
+        android:pathData="M32,36 L33,39 L36,40 L33,41 L32,44 L31,41 L28,40 L31,39 Z"
+        android:fillColor="#FFE082" />
+    <path
+        android:pathData="M78,32 L78.7,34.5 L81,35 L78.7,35.5 L78,38 L77.3,35.5 L75,35 L77.3,34.5 Z"
+        android:fillColor="#FFF9C4" />
+    <path
+        android:pathData="M72,68 L72.7,70 L75,70.5 L72.7,71 L72,73 L71.3,71 L69,70.5 L71.3,70 Z"
+        android:fillColor="#FFE082" />
+
+    <!-- Glowing Golden Crescent Moon -->
+    <path
+        android:pathData="M52,28 C64,28 73,37 73,49 C73,61 63,71 50,71 C44,71 39,68.5 35,65 C43,67 52,62 55,53 C57,47 55,39 49,34 C50,34 51,28 52,28 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="35"
+                android:startY="28"
+                android:endX="73"
+                android:endY="71"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FFF176" />
+                <item android:offset="0.5" android:color="#FFD54F" />
+                <item android:offset="1.0" android:color="#FFA000" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Ramadan Fanoos (Lantern) Hanging with Musical Chime -->
+    <!-- Hanging Chain -->
+    <path
+        android:pathData="M42,42 L42,50"
+        android:strokeColor="#FFE082"
+        android:strokeWidth="1.5"
+        android:fillColor="#00000000" />
+
+    <!-- Lantern Top Dome -->
+    <path
+        android:pathData="M38,50 L46,50 L44,47 L40,47 Z"
+        android:fillColor="#FFB300" />
+
+    <!-- Lantern Glass Body (with glowing flame) -->
+    <path
+        android:pathData="M37,50 L47,50 L45,62 L39,62 Z"
+        android:fillColor="#FFE082" />
+
+    <!-- Inner Flame / Music note flame -->
+    <path
+        android:pathData="M42,53 C44,55 44,58 42,60 C40,58 40,55 42,53 Z"
+        android:fillColor="#FF6D00" />
+
+    <!-- Lantern Base -->
+    <path
+        android:pathData="M38,62 L46,62 L47,66 L37,66 Z"
+        android:fillColor="#FFB300" />
+</vector>

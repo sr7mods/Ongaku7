@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Star on top of tree -->
+    <path
+        android:pathData="M54,28 L56,33 L61,33 L57,36 L59,41 L54,38 L49,41 L51,36 L47,33 L52,33 Z"
+        android:fillColor="#FFD700" />
+
+    <!-- Holiday Pine Layers -->
+    <path
+        android:pathData="M54,36 L66,48 L59,48 L71,60 L63,60 L76,73 L32,73 L45,60 L37,60 L49,48 L42,48 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="32"
+                android:startY="36"
+                android:endX="76"
+                android:endY="73"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#00E676" />
+                <item android:offset="1.0" android:color="#00897B" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Trunk -->
+    <path
+        android:pathData="M51,73 L57,73 L57,79 L51,79 Z"
+        android:fillColor="#8D6E63" />
+
+    <!-- Holiday Ornaments / Music Notes -->
+    <path
+        android:pathData="M48,52 A3,3 0 1,1 48,52.01"
+        android:fillColor="#FF1744" />
+    <path
+        android:pathData="M60,55 A3,3 0 1,1 60,55.01"
+        android:fillColor="#FFD700" />
+    <path
+        android:pathData="M44,66 A3,3 0 1,1 44,66.01"
+        android:fillColor="#00E5FF" />
+    <path
+        android:pathData="M64,68 A3,3 0 1,1 64,68.01"
+        android:fillColor="#FF4081" />
+</vector>

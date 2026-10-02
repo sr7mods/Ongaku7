@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_glass_card_bg"
+    android:padding="14dp">
+
+    <!-- Ambient glow backdrop -->
+    <ImageView
+        android:id="@+id/widget_ambient_glow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:alpha="0.45"
+        android:contentDescription="Ambient Glow" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Top Section: App Header + Favorite Button -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ONGAKU7"
+                android:fontFamily="monospace"
+                android:textColor="#00F5FF"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.1"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageButton
+                android:id="@+id/widget_btn_fav"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/widget_circle_btn_bg"
+                android:src="@drawable/ic_favorite_border"
+                android:scaleType="centerInside"
+                android:padding="5dp"
+                android:tint="#FFFFFF"
+                android:contentDescription="Favorite" />
+        </RelativeLayout>
+
+        <!-- Center: Artwork with status badge -->
+        <FrameLayout
+            android:id="@+id/widget_art_container"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/widget_album_art"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_play_arrow"
+                android:background="@drawable/widget_art_bg"
+                android:contentDescription="Album Art" />
+
+            <ImageView
+                android:id="@+id/widget_play_badge"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom|end"
+                android:background="@drawable/widget_circle_btn_bg"
+                android:src="@drawable/ic_play_arrow"
+                android:tint="#00F5FF"
+                android:padding="3dp"
+                android:contentDescription="Status" />
+        </FrameLayout>
+
+        <!-- Track Info -->
+        <LinearLayout
+            android:id="@+id/widget_info_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingHorizontal="4dp">
+
+            <TextView
+                android:id="@+id/widget_track_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ongaku7"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever" />
+
+            <TextView
+                android:id="@+id/widget_track_artist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="No track playing"
+                android:textColor="#9E9EA6"
+                android:textSize="10.5sp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:ellipsize="end" />
+
+            <!-- Progress Bar -->
+            <ProgressBar
+                android:id="@+id/widget_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="8dp"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/widget_progress_bar" />
+        </LinearLayout>
+
+        <!-- Controls Row -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <!-- Loop Mode Button -->
+            <ImageButton
+                android:id="@+id/widget_btn_loop"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/widget_circle_btn_bg"
+                android:src="@drawable/ic_repeat"
+                android:scaleType="centerInside"
+                android:padding="6dp"
+                android:tint="#BD00FF"
+                android:contentDescription="Loop Mode" />
+
+            <ImageButton
+                android:id="@+id/widget_btn_prev"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/widget_circle_btn_bg"
+                android:src="@drawable/ic_skip_previous"
+                android:scaleType="centerInside"
+                android:padding="7dp"
+                android:tint="#FFFFFF"
+                android:contentDescription="Previous" />
+
+            <ImageButton
+                android:id="@+id/widget_btn_play_pause"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/widget_play_btn_bg"
+                android:src="@drawable/ic_play_arrow"
+                android:scaleType="centerInside"
+                android:padding="8dp"
+                android:tint="#0A0B14"
+                android:contentDescription="Play or Pause" />
+
+            <ImageButton
+                android:id="@+id/widget_btn_next"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/widget_circle_btn_bg"
+                android:src="@drawable/ic_skip_next"
+                android:scaleType="centerInside"
+                android:padding="7dp"
+                android:tint="#FFFFFF"
+                android:contentDescription="Next" />
+
+            <!-- Open App / Library Button -->
+            <ImageButton
+                android:id="@+id/widget_btn_library"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/widget_circle_btn_bg"
+                android:src="@drawable/ic_library_music"
+                android:scaleType="centerInside"
+                android:padding="6dp"
+                android:tint="#00F5FF"
+                android:contentDescription="Open Player" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

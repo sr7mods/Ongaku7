@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Premium Cyberpunk Base Canvas -->
+    <path
+        android:fillColor="#080910"
+        android:pathData="M0,0h108v108h-108z" />
+
+    <!-- Ambient Subtle Deep Radial Glow -->
+    <path
+        android:pathData="M0,0h108v108h-108z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="54"
+                android:centerY="54"
+                android:gradientRadius="54"
+                android:type="radial">
+                <item android:offset="0.0" android:color="#24122E" />
+                <item android:offset="0.5" android:color="#101124" />
+                <item android:offset="1.0" android:color="#080910" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Concentric High-Tech Vinyl Grooves -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#1800F5FF"
+        android:strokeWidth="0.8"
+        android:pathData="M54,18 A36,36 0 1,0 54,90 A36,36 0 1,0 54,18" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#12FFFFFF"
+        android:strokeWidth="0.7"
+        android:pathData="M54,23 A31,31 0 1,0 54,85 A31,31 0 1,0 54,23" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#15BD00FF"
+        android:strokeWidth="0.8"
+        android:pathData="M54,28 A26,26 0 1,0 54,80 A26,26 0 1,0 54,28" />
+
+    <!-- Subtle Diagonal Geometric Texture Lines -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#0E00F5FF"
+        android:strokeWidth="0.6"
+        android:pathData="M0,27 L27,0 M0,54 L54,0 M0,81 L81,0 M0,108 L108,0 M27,108 L108,27 M54,108 L108,54 M81,108 L108,81" />
+</vector>

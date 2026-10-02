@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/widget_glass_bg"
+    android:padding="10dp">
+
+    <!-- Ambient glow backdrop overlay populated dynamically via Palette API -->
+    <ImageView
+        android:id="@+id/widget_ambient_glow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:alpha="0.45"
+        android:contentDescription="Ambient Glow" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Left Section: High-resolution Album Art & Playback Badge -->
+        <FrameLayout
+            android:id="@+id/widget_art_container"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="10dp">
+
+            <ImageView
+                android:id="@+id/widget_album_art"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_play_arrow"
+                android:background="@drawable/widget_art_bg"
+                android:contentDescription="Album Art" />
+
+            <ImageView
+                android:id="@+id/widget_play_badge"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="bottom|end"
+                android:background="@drawable/widget_circle_btn_bg"
+                android:src="@drawable/ic_play_arrow"
+                android:tint="#00F5FF"
+                android:padding="2dp"
+                android:contentDescription="Status" />
+        </FrameLayout>
+
+        <!-- Middle Section: Marquee Title, Artist & Album, Progress -->
+        <LinearLayout
+            android:id="@+id/widget_info_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginEnd="8dp">
+
+            <TextView
+                android:id="@+id/widget_track_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ongaku7"
+                android:textColor="#FFFFFF"
+                android:textSize="13.5sp"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />
+
+            <TextView
+                android:id="@+id/widget_track_artist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="No track playing"
+                android:textColor="#9E9EA6"
+                android:textSize="11sp"
+                android:singleLine="true"
+                android:ellipsize="end" />
+
+            <!-- Real-time Progress Bar -->
+            <ProgressBar
+                android:id="@+id/widget_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="6dp"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/widget_progress_bar" />
+        </LinearLayout>
+
+        <!-- Right Section: Compact Glassmorphic Control Buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Previous Track -->
+            <ImageButton
+                android:id="@+id/widget_btn_prev"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/widget_circle_btn_bg"
+                android:src="@drawable/ic_skip_previous"
+                android:scaleType="centerInside"
+                android:padding="6dp"
+                android:tint="#FFFFFF"
+                android:contentDescription="Previous" />
+
+            <!-- Play/Pause Toggle -->
+            <ImageButton
+                android:id="@+id/widget_btn_play_pause"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/widget_play_btn_bg"
+                android:src="@drawable/ic_play_arrow"
+                android:scaleType="centerInside"
+                android:padding="7dp"
+                android:tint="#0A0B14"
+                android:contentDescription="Play or Pause" />
+
+            <!-- Next Track -->
+            <ImageButton
+                android:id="@+id/widget_btn_next"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/widget_circle_btn_bg"
+                android:src="@drawable/ic_skip_next"
+                android:scaleType="centerInside"
+                android:padding="6dp"
+                android:tint="#FFFFFF"
+                android:contentDescription="Next" />
+
+            <!-- Favorite Toggle -->
+            <ImageButton
+                android:id="@+id/widget_btn_fav"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/widget_circle_btn_bg"
+                android:src="@drawable/ic_favorite_border"
+                android:scaleType="centerInside"
+                android:padding="6dp"
+                android:tint="#FFFFFF"
+                android:contentDescription="Favorite" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

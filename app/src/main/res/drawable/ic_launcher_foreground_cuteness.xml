@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Cute sitting anime chibi girl holding the Ongaku7 '7' icon with music note on top -->
+
+    <!-- Cute Chibi Girl Legs Sitting / Curled -->
+    <path
+        android:pathData="M38,76 C36,78 40,84 48,84 C54,84 56,80 56,76"
+        android:fillColor="#FFD1DC" />
+    <path
+        android:pathData="M56,76 C56,80 60,84 66,84 C74,84 78,78 76,76"
+        android:fillColor="#FFD1DC" />
+
+    <!-- Cute Pastel Dress / Body -->
+    <path
+        android:pathData="M44,58 L68,58 L72,74 C72,78 68,80 56,80 C44,80 40,78 40,74 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="40"
+                android:startY="58"
+                android:endX="72"
+                android:endY="80"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FF80AB" />
+                <item android:offset="1.0" android:color="#BD00FF" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Head & Neck -->
+    <path
+        android:pathData="M51,54 L61,54 L61,58 L51,58 Z"
+        android:fillColor="#FFE0BD" />
+    <!-- Cute Chibi Face -->
+    <path
+        android:pathData="M42,42 C42,32 50,28 56,28 C62,28 70,32 70,42 C70,52 64,56 56,56 C48,56 42,52 42,42 Z"
+        android:fillColor="#FFE0BD" />
+
+    <!-- Hair Back & Twin Tails / Soft Hair Flow -->
+    <path
+        android:pathData="M38,36 C34,44 32,58 36,66 C38,62 40,50 42,42 Z"
+        android:fillColor="#FF4081" />
+    <path
+        android:pathData="M74,36 C78,44 80,58 76,66 C74,62 72,50 70,42 Z"
+        android:fillColor="#FF4081" />
+
+    <!-- Cute Bangs -->
+    <path
+        android:pathData="M42,38 C46,42 50,38 54,42 C58,38 64,40 70,36 C68,30 62,28 56,28 C50,28 44,30 42,38 Z"
+        android:fillColor="#FF4081" />
+
+    <!-- Cute Shiny Eyes -->
+    <path
+        android:pathData="M 45.5,44 a 2.5,3.5 0 1,0 5,0 a 2.5,3.5 0 1,0 -5,0 Z"
+        android:fillColor="#1A0B2E" />
+    <path
+        android:pathData="M 46.2,42.8 a 1,1 0 1,0 2,0 a 1,1 0 1,0 -2,0 Z"
+        android:fillColor="#FFFFFF" />
+
+    <path
+        android:pathData="M 61.5,44 a 2.5,3.5 0 1,0 5,0 a 2.5,3.5 0 1,0 -5,0 Z"
+        android:fillColor="#1A0B2E" />
+    <path
+        android:pathData="M 62.2,42.8 a 1,1 0 1,0 2,0 a 1,1 0 1,0 -2,0 Z"
+        android:fillColor="#FFFFFF" />
+
+    <!-- Blushing Rosy Cheeks -->
+    <path
+        android:pathData="M 42,48 a 3,1.5 0 1,0 6,0 a 3,1.5 0 1,0 -6,0 Z"
+        android:fillColor="#FF80AB" />
+    <path
+        android:pathData="M 64,48 a 3,1.5 0 1,0 6,0 a 3,1.5 0 1,0 -6,0 Z"
+        android:fillColor="#FF80AB" />
+
+    <!-- Cute Smiling Mouth -->
+    <path
+        android:pathData="M54,49 Q56,52 58,49"
+        android:strokeColor="#FF4081"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000" />
+
+    <!-- THE ONGAKU 7 HELD IN HER HANDS -->
+    <!-- Stylized '7' with Musical Note On Top (Scaled and centered in hands) -->
+    <path
+        android:pathData="M42,50 L70,50 C71.5,50 72.5,51 72,52.2 L55,80 C54.5,80.8 53.5,81 52.5,80.8 C51.5,80.5 51,79.6 51.2,78.6 L52.8,69 L48,69 C44,69 41,72 41,75.5 C41,79 44,82 48,82 C52,82 55,79 55,75.5 L55,57 L63,57 L66.5,51.5 L42,51.5 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="42"
+                android:startY="50"
+                android:endX="72"
+                android:endY="82"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#00F5FF" />
+                <item android:offset="0.5" android:color="#BD00FF" />
+                <item android:offset="1.0" android:color="#FF007F" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Glowing Musical Note on Top of the 7 -->
+    <path
+        android:pathData="M68,43 C66.5,41.5 64,42 64,44 C64,46 68,48 68,48 C68,48 72,46 72,44 C72,42 69.5,41.5 68,43 Z"
+        android:fillColor="#00F5FF" />
+    <path
+        android:pathData="M70,44 L70,36 L75,34.5 L75,38.5 L71.5,39.5 L71.5,44 Z"
+        android:fillColor="#00F5FF" />
+
+    <!-- Cute Chibi Arms Hugging the '7' -->
+    <path
+        android:pathData="M42,60 C42,66 48,70 52,68 C52.5,67 51,64 48,64 C46,64 45,61 45,59 Z"
+        android:fillColor="#FFE0BD" />
+    <path
+        android:pathData="M66,60 C66,66 60,70 56,68 C55.5,67 57,64 60,64 C62,64 63,61 63,59 Z"
+        android:fillColor="#FFE0BD" />
+
+    <!-- Tiny Sparkles / Melody particles around -->
+    <path
+        android:pathData="M34,44 L35.5,46 L37.5,46 L36,47.5 L36.5,49.5 L35,48 L33.5,49.5 L34,47.5 L32.5,46 L34.5,46 Z"
+        android:fillColor="#00F5FF" />
+    <path
+        android:pathData="M76,64 L77,65.5 L78.5,65.5 L77.5,66.5 L78,68 L77,67 L76,68 L76.5,66.5 L75.5,65.5 L77,65.5 Z"
+        android:fillColor="#FF80AB" />
+</vector>

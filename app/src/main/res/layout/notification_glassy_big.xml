@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="132dp"
+    android:background="@drawable/notification_bg"
+    android:padding="8dp">
+
+    <!-- Glassy Album Art Background -->
+    <ImageView
+        android:id="@+id/notification_bg_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:alpha="0.22" />
+
+    <!-- Top Left Title: Ongaku7 -->
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ongaku7"
+        android:textSize="9sp"
+        android:textStyle="bold"
+        android:textColor="#00F5FF"
+        android:fontFamily="monospace"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <!-- Close/Stop button at top right -->
+    <ImageButton
+        android:id="@+id/btn_stop"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_close"
+        android:tint="#FF3B30"
+        android:contentDescription="Stop" />
+
+    <!-- Album Art (Large) -->
+    <ImageView
+        android:id="@+id/album_art"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/app_title"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="6dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_play_arrow" />
+
+    <!-- Text info (Title, Artist) -->
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/app_title"
+        android:layout_toEndOf="@id/album_art"
+        android:layout_toStartOf="@id/btn_stop"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginTop="6dp">
+
+        <TextView
+            android:id="@+id/track_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Song Title"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/track_artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Artist Name"
+            android:textColor="#B3FFFFFF"
+            android:textSize="11sp"
+            android:ellipsize="end"
+            android:maxLines="1" />
+    </LinearLayout>
+
+    <!-- Progress slider placed directly below the album art and text info -->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:minHeight="6dp"
+        android:maxHeight="6dp"
+        android:layout_below="@id/album_art"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:max="100"
+        android:progress="0"
+        android:progressTint="#00F5FF"
+        android:progressBackgroundTint="#33FFFFFF" />
+
+    <!-- Controls Container (at the very bottom) -->
+    <LinearLayout
+        android:id="@+id/controls_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/progress_bar"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp">
+
+        <ImageButton
+            android:id="@+id/btn_loop"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_repeat"
+            android:tint="#BD00FF"
+            android:contentDescription="Loop" />
+
+        <ImageButton
+            android:id="@+id/btn_prev"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="28dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_skip_previous"
+            android:tint="#FFFFFF"
+            android:contentDescription="Previous" />
+
+        <ImageButton
+            android:id="@+id/btn_play_pause"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="28dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_play_arrow"
+            android:tint="#00F5FF"
+            android:contentDescription="Play/Pause" />
+
+        <ImageButton
+            android:id="@+id/btn_next"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="28dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_skip_next"
+            android:tint="#FFFFFF"
+            android:contentDescription="Next" />
+
+    </LinearLayout>
+
+</RelativeLayout>

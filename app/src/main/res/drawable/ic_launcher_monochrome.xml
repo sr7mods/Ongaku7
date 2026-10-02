@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Outer Soundwave Pulse Rings -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M30,54 A24,24 0 0,1 54,30" />
+
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M78,54 A24,24 0 0,1 54,78" />
+
+    <!-- Ongaku 7 Stylized Note Silhouette in Solid White for Dynamic Material You Theming -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M32,32 L74,32 C75.5,32 76.5,33.2 76,34.6 L55,75.2 C54.5,76.2 53.3,76.8 52.1,76.5 C51,76.2 50.2,75.2 50.4,74 L52.2,63.5 L46,63.5 C41,63.5 37,67.5 37,72.5 C37,77.5 41,81.5 46,81.5 C51,81.5 55,77.5 55,72.5 L55,42 L66.5,42 L70.5,34 L32,34 Z" />
+
+    <!-- Equalizer Spectrum Accents -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M26,51 L26,57" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M82,47 L82,61" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M87,51 L87,57" />
+</vector>
